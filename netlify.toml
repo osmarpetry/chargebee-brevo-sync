@@ -1,5 +1,5 @@
 [build]
-  command = "bun install && bun run build"
+  command = "bun install && bun run build-storybook -- --output-dir public/storybook && bun run build"
   publish = ".next"
 
 [build.environment]

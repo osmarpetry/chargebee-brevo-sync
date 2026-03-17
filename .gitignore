@@ -45,7 +45,7 @@ package-lock.json
 
 *storybook.log
 storybook-static
-
+public/storybook/
 
 playwright-report
 test-results
