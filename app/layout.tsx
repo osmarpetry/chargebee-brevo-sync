@@ -22,7 +22,13 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "CBDemo",
   },
-  icons: { apple: "/apple-icon.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
