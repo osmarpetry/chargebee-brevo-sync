@@ -1,0 +1,27 @@
+# Netlify configuration for the Storybook site (new subdomain deployment).
+#
+# DEPLOYMENT STEPS:
+# 1. Push this repo to GitHub (if not already done)
+# 2. Netlify → "Add new site" → "Import an existing project" → select this repo
+# 3. In build settings:
+#      Build command:   bun run build-storybook
+#      Publish dir:     storybook-static
+# 4. Click "Deploy site"
+# 5. In Netlify site settings → Domain management → Add custom domain:
+#      e.g. storybook.osmarpetry.dev
+# 6. In your DNS provider, add a CNAME record:
+#      storybook  →  <your-netlify-site-name>.netlify.app
+# 7. Netlify auto-provisions SSL via Let's Encrypt (usually < 1 min)
+#
+# NOTE: This file is a REFERENCE for the Storybook Netlify site.
+#       The main app uses netlify.toml at the repo root.
+#       When creating the new Netlify site, paste the [build] section below
+#       directly into that site's build settings OR rename this file to
+#       netlify.toml in a dedicated storybook-only branch/deploy context.
+
+[build]
+  command = "bun run build-storybook"
+  publish = "storybook-static"
+
+[build.environment]
+  NODE_VERSION = "20"

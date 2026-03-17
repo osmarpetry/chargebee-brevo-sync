@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
+/* Passbolt design tokens — matched exactly to passbolt.com CSS */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;        /* --chinese-black */
+  --foreground: #ffffff;        /* --white */
+  --color-primary: #4b92d9;     /* --celestial-blue */
+  --color-primary-hover: #3a7fc4;
+  --color-success: #088869;     /* --generic-viridian */
+  --color-error: #d40101;       /* --rosso-corsa / passbolt-red */
+  --color-nav-bg: #171717;      /* --chinese-black */
+  --color-card-bg: #1f1f1f;     /* --eerie-black */
+  --color-card-border: #333333; /* --grey-80 */
+  --color-muted: #b3b3b3;       /* --grey-30 */
+  --color-subtle: #999999;      /* --grey-40 */
+  --color-surface: #1a1a1a;     /* --grey-90 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inconsolata);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }

@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   }
 
   const base = process.env.NEXT_PUBLIC_URL ?? 'http://localhost:3000'
-  const successUrl = `${base}/checkout/success`
+  const successUrl = `${base}/checkout/success${email ? `?email=${encodeURIComponent(email)}` : ''}`
   const cancelUrl = `${base}/pricing`
 
   try {

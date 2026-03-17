@@ -42,3 +42,10 @@ next-env.d.ts
 
 # npm lockfile (project uses bun)
 package-lock.json
+
+*storybook.log
+storybook-static
+
+
+playwright-report
+test-results
