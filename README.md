@@ -1,6 +1,8 @@
-# ChargeBee → Brevo Integration Demo
+# Chargebee Brevo Sync
 
-A technical demo replicating the core integration challenge faced by the Passbolt team: receiving ChargeBee webhooks and synchronizing contacts to a CRM (Brevo) via Next.js API Routes — no database, stateless, event-driven.
+Chargebee Brevo Sync is a webhook-driven integration demo that syncs Chargebee billing/subscription events into Brevo contact data.
+
+A technical demo replicating the core integration challenge faced by the Passbolt team: receiving Chargebee webhooks and synchronizing contacts to a CRM (Brevo) via Next.js API Routes - no database, stateless, event-driven.
 
 **Live:** [demo.osmarpetry.dev](https://demo.osmarpetry.dev)
 
@@ -74,8 +76,8 @@ lib/
 ## Setup
 
 ```bash
-git clone https://github.com/osmarpetry/chargebee-brevo-demo
-cd chargebee-brevo-demo
+git clone https://github.com/osmarpetry/chargebee-brevo-sync
+cd chargebee-brevo-sync
 cp .env.example .env.local
 # edit .env.local with your values
 bun install
