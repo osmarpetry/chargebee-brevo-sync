@@ -9,7 +9,7 @@
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "vitest",
+    "test": "playwright install chromium && vitest",
     "generate-icons": "bun scripts/generate-icons.mjs",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"
