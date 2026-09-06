@@ -44,7 +44,7 @@
     "storybook": "^10.2.19",
     "tailwindcss": "^4",
     "to-ico": "^1.1.5",
-    "typescript": "^5",
+    "typescript": "^7",
     "vite": "^8.0.0",
     "vitest": "^4.1.0"
   },
